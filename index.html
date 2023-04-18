@@ -6,12 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/f031464041.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./sass/hamburger.css">
     <link rel="stylesheet" href="./sass/main.css">
     <title>NO LIMIT VIDEOS</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/img/faviconLogo2.png">
 </head>
 
 <body>
+    <header>
+        <button class="hamburger hamburger--spin" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <nav class="nav nav-mobile">
+            <!-- przy niedziałających linkach usunięta klasa nav__link-mobile, a dodana disable -->
+            <a href="#" class="nav__link disable">o nas</a>
+            <a href="#" class="nav__link disable">oferta</a>
+            <a href="#" class="nav__link disable">portfolio</a>
+            <a href="./index.html" class="nav__link nav__link-mobile">punkt stacjonarny</a>
+            <a href="#" class="nav__link disable">kontakt</a>
+            <!-- klasa nav__link-mobile do sterowania znikaniem navigacji mobilnej -->
+        </nav>
+
+        <nav class="nav nav-desktop">
+            <a href="about" class="nav__link ">o nas</a>
+            <a href="offer" class="nav__link ">oferta</a>
+            <a href="portfolio" class="nav__link ">portfolio</a>
+            <a href="point" class="nav__link ">punkt stacjonarny</a>
+            <a href="contact" class="nav__link ">kontakt</a>
+        </nav>
+
+    </header>
 
     <script src="./js/script.js"></script>
 </body>
