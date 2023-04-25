@@ -10,35 +10,45 @@
     <link rel="stylesheet" href="./sass/main.css">
     <title>NO LIMIT VIDEOS</title>
     <link rel="icon" type="image/png" sizes="32x32" href="/img/faviconLogo2.png">
+    <!-- zaokrąglić brzegi favikony -->
 </head>
 
 <body>
     <header>
+
         <button class="hamburger hamburger--spin" type="button">
             <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
             </span>
         </button>
-
         <nav class="nav nav-mobile">
             <!-- przy niedziałających linkach usunięta klasa nav__link-mobile, a dodana disable -->
-            <a href="#" class="nav__link disable">o nas</a>
-            <a href="#" class="nav__link disable">oferta</a>
-            <a href="#" class="nav__link disable">portfolio</a>
+            <a href="#" class="nav__link disabled">o nas</a>
+            <a href="#" class="nav__link disabled">oferta</a>
+            <a href="#" class="nav__link disabled">portfolio</a>
             <a href="./index.html" class="nav__link nav__link-mobile">punkt stacjonarny</a>
-            <a href="#" class="nav__link disable">kontakt</a>
+            <a href="#" class="nav__link disabled">kontakt</a>
             <!-- klasa nav__link-mobile do sterowania znikaniem navigacji mobilnej -->
         </nav>
 
         <nav class="nav nav-desktop">
-            <a href="about" class="nav__link ">o nas</a>
-            <a href="offer" class="nav__link ">oferta</a>
-            <a href="portfolio" class="nav__link ">portfolio</a>
-            <a href="point" class="nav__link ">punkt stacjonarny</a>
-            <a href="contact" class="nav__link ">kontakt</a>
+            <div class="container">
+                <div class="nav__logo">
+                    <a href="index.html"><img src="./img/LOGO aparat NO LIMIT photography biał-czarne.png" alt=""></a>
+                </div>
+                <div class="nav__items">
+                    <a href="#" class="nav__link--d disabled">o nas</a>
+                    <a href="#" class="nav__link--d disabled">oferta</a>
+                    <a href="#" class="nav__link--d disabled">portfolio</a>
+                    <a href="index.html" class="nav__link--d nav__link-desktop ">punkt stacjonarny</a>
+                    <a href="#" class="nav__link--d disabled">kontakt</a>
+                </div>
+            </div>
+            </div>
         </nav>
 
     </header>
+
 
     <script src="./js/script.js"></script>
 </body>

@@ -1,0 +1,33 @@
+@media (min-width: 992px) {
+	.hamburger {
+		display: none; //juz nam się nie przyda ikona
+	}
+	.nav {
+		.container {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&-desktop {
+			position: fixed;
+			display: flex;
+			padding: 3rem;
+			width: 100%;
+			height: 12rem;
+			background-color: rgba(0, 0, 0, 1);
+			&--reduction {
+				height: 6.5rem;
+				box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.4);
+				background-color: rgba(0, 0, 0, 0.8);
+			}
+		}
+		&__logo {
+			img {
+				height: 6rem;
+				width: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+}

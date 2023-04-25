@@ -42,6 +42,13 @@ body {
 	background-color: #333;
 }
 
+.container {
+	//dla użytkowników bardzo szerokich ekranów, żeby wyśrodkowało treść
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
 .hamburger {
 	position: fixed;
 	top: 3em;
@@ -59,6 +66,10 @@ body {
 }
 
 .nav {
+	.disabled {
+		color: gray;
+		text-decoration: none;
+	}
 	&-desktop {
 		display: none;
 	}
@@ -77,16 +88,11 @@ body {
 		transform: translate(
 			-102%
 		); //przy 100% na niektórych rozdzielczościach widoczny biały pasek
-		transition: transform 0.3s;
+		transition: transform 0.5s;
 		z-index: 10;
 
 		&--active {
 			transform: translate(0); //klasa dodawana w JS (pokazywanie nawigacji)
-		}
-
-		.disable {
-			color: gray;
-			text-decoration: none;
 		}
 	}
 
@@ -101,9 +107,30 @@ body {
 		text-decoration: none;
 		transition: color 0.3s;
 
-		&-mobile:hover {
+		&--d { //zamienić później na desktop, teraz póki co jest tak, żeby hovery działały tylko na działających linkach, stąd inna klasa dodana
+			position: relative;
+			margin: 0.5em;
+			padding: 0.5em;
+			font-size: 1.5rem;
+			color: black;
+			text-transform: uppercase;
+			text-decoration: none;
+			transition: color 0.3s;
+		}
+
+		&-desktop {
+			// position: relative;
+			color: #fff; //żeby kolor był inny niż na mobilnych
+		}
+
+		&-mobile:hover,
+		&-desktop:hover {
 			//dodana -mobile, zeby działały tylko aktywne linki, jak wszytskie będą aktywne, trzeba usunąć i zostawić &::hover
 			color: var(--maincolor);
 		}
 	}
 }
+
+@import './small';
+@import './medium';
+@import './large';

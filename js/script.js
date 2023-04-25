@@ -1,4 +1,5 @@
 const navMobile = document.querySelector('.nav-mobile');
+const navDesktop = document.querySelector('.nav-desktop')
 const navBtn = document.querySelector('.hamburger');
 const allNavMobileLinks = document.querySelectorAll('.nav__link-mobile');
 const footerYear = document.querySelector('.footer__year');
@@ -16,6 +17,12 @@ const handleNav = () => {
 };
 
 navBtn.addEventListener("click", handleNav)
+
+const handleDesktopNav = () => {
+	navDesktop.classList.toggle('nav-desktop--reduction', window.scrollY > 65)
+} //dodawanie klasy, zmniejszającej navigację desktopową
+
+window.addEventListener('scroll', handleDesktopNav)
 
 const handleCurrentYear = () => {
 	//funkcja umieszczająca aktualny rok w stopce
