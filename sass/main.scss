@@ -157,11 +157,8 @@ body {
 			position: absolute;
 			height: 100%;
 			width: 100%;
-			background-color: rgba(0, 0, 0, 0.85);
+			background-color: rgba(0, 0, 0, 0.75);
 		}
-	}
-	&__info {
-		display: none;
 	}
 
 	&__heading {
@@ -171,38 +168,92 @@ body {
 		flex-direction: column;
 		text-align: center;
 		&-title {
-			margin-top: 3em;
-			margin-bottom: 1em;
-			font-size: 5rem;
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+			font-size: 4.5rem;
+			text-transform: uppercase;
 		}
 		&-adress {
 			font-size: 2rem;
+			margin-bottom: 1.8rem;
+			span {
+				font-size: 1.8rem;
+			}
+		}
+	}
+	&__info {
+		font-size: 1.5rem;
+		text-align: center;
+		&-title {
+			font-size: 1.8rem;
+			margin-bottom: 0.5rem;
 		}
 	}
 }
 
+//SECTION HEADING
 .section-heading {
 	position: relative;
-	margin: 1rem 0;
+	margin: 1rem 0 3rem 0;
 	font-size: 3rem;
-	font-weight: 300;
+	font-weight: 400;
 	text-transform: uppercase;
 	text-align: center;
 	color: var(--maincolor);
-	letter-spacing: 2px; //dodana przerwa pomiędzy literami 2px
-	text-decoration-line: underline;
+	letter-spacing: 2px;
 }
 
 //STATIONARY OFFERS
-
 .stationary-offers {
 	position: relative;
 	padding: 2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
 	background-color: #fff;
+	color: #000;
+	&__card {
+		//pomyśleć nad maksymalną szerokością
+		position: relative;
+		padding: 2rem 2rem 8rem 2rem;
+		margin: 2rem 0;
+		border: 2px solid var(--maincolor);
+		background-color: #fff;
+		border-radius: 1rem;
+		box-shadow: 2px 2px 5px rgb(0, 0, 0);
+		&-title {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			height: 10rem;
+			padding: 2rem 0;
+			font-size: 3rem;
+			border-bottom: 2px solid var(--maincolor);
+		}
+		&-info {
+			margin: 1rem 0;
+			font-size: 1.8rem;
+		}
+		&-list {
+			font-size: 1.8rem;
+			margin: 1rem 0;
+			list-style-position: inside;
+			&-item {
+				padding: 0.5rem 0;
+			}
+		}
+		&-price-btn {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: 2rem;
+			padding: 1rem;
+			border-radius: 1rem;
+			width: 60%;
+			border: none;
+			font-size: 3rem;
+			color: #fff;
+			background-color: var(--maincolor);
+		}
+	}
 }
 
 @import './small';

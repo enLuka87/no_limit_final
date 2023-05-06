@@ -134,10 +134,7 @@ body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-}
-.header__info {
-  display: none;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 .header__heading {
   display: flex;
@@ -147,34 +144,87 @@ body {
   text-align: center;
 }
 .header__heading-title {
-  margin-top: 3em;
-  margin-bottom: 1em;
-  font-size: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 4.5rem;
+  text-transform: uppercase;
 }
 .header__heading-adress {
   font-size: 2rem;
+  margin-bottom: 1.8rem;
+}
+.header__heading-adress span {
+  font-size: 1.8rem;
+}
+.header__info {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.header__info-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
 }
 
 .section-heading {
   position: relative;
-  margin: 1rem 0;
+  margin: 1rem 0 3rem 0;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   color: var(--maincolor);
   letter-spacing: 2px;
-  text-decoration-line: underline;
 }
 
 .stationary-offers {
   position: relative;
   padding: 2rem;
+  background-color: #fff;
+  color: #000;
+}
+.stationary-offers__card {
+  position: relative;
+  padding: 2rem 2rem 8rem 2rem;
+  margin: 2rem 0;
+  border: 2px solid var(--maincolor);
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+.stationary-offers__card-title {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  background-color: #fff;
+  text-align: center;
+  height: 10rem;
+  padding: 2rem 0;
+  font-size: 3rem;
+  border-bottom: 2px solid var(--maincolor);
+}
+.stationary-offers__card-info {
+  margin: 1rem 0;
+  font-size: 1.8rem;
+}
+.stationary-offers__card-list {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  list-style-position: inside;
+}
+.stationary-offers__card-list-item {
+  padding: 0.5rem 0;
+}
+.stationary-offers__card-price-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 60%;
+  border: none;
+  font-size: 3rem;
+  color: #fff;
+  background-color: var(--maincolor);
 }
 
 @media (min-width: 992px) {
@@ -220,7 +270,6 @@ body {
     margin-top: 10rem;
     margin-bottom: 2rem;
     font-size: 7.5rem;
-    text-transform: uppercase;
   }
   .header__heading-adress {
     font-size: 3.5rem;
@@ -232,7 +281,6 @@ body {
     background-image: url("../img/Zdjęcie lokalu 3 desktop.jpg");
   }
   .header__info {
-    display: block;
     margin: 0 auto;
     width: 100%;
     max-width: 990px;
@@ -242,5 +290,23 @@ body {
   .header__info-title {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+  }
+  .section-heading {
+    font-size: 3.6rem;
+  }
+  .stationary-offers__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .stationary-offers__card {
+    margin: 2rem;
+    width: 45rem;
+    height: 52rem;
+    transition: transform 0.3s;
+  }
+  .stationary-offers__card:hover {
+    transform: scale(1.04);
   }
 }/*# sourceMappingURL=main.css.map */

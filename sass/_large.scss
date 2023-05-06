@@ -2,6 +2,8 @@
 	.hamburger {
 		display: none; //juz nam się nie przyda ikona
 	}
+
+	//NAWIGACJA
 	.nav {
 		&__box {
 			display: flex;
@@ -38,6 +40,8 @@
 			}
 		}
 	}
+
+	//NAGŁÓWEK
 	.header {
 		height: 85vh;
 
@@ -47,7 +51,6 @@
 				margin-top: 10rem;
 				margin-bottom: 2rem;
 				font-size: 7.5rem;
-				text-transform: uppercase;
 			}
 			&-adress {
 				font-size: 3.5rem;
@@ -60,7 +63,6 @@
 			background-image: url('../img/Zdjęcie\ lokalu\ 3\ desktop.jpg');
 		}
 		&__info {
-			display: block;
 			margin: 0 auto;
 			width: 100%;
 			max-width: 990px;
@@ -69,6 +71,30 @@
 			&-title {
 				font-size: 2.5rem;
 				margin-bottom: 0.5rem;
+			}
+		}
+	}
+
+	//SECTION HEADING
+	.section-heading {
+		font-size: 3.6rem;
+	}
+
+	//STATIONARY OFFERS
+	.stationary-offers {
+		&__cards {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+		&__card {
+			margin: 2rem;
+			width: 45rem;
+			height: 52rem;
+			transition: transform 0.3s;
+			&:hover {
+				transform: scale(1.04);
 			}
 		}
 	}
