@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -59,6 +60,7 @@ body {
 .nav .disabled {
   color: gray;
   text-decoration: none;
+  cursor: default;
 }
 .nav-desktop {
   display: none;
@@ -109,19 +111,95 @@ body {
   color: var(--maincolor);
 }
 
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  height: 85vh;
+  color: #fff;
+}
+.header__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/Zdjęcie lokalu 3 mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.header__img-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.header__info {
+  display: none;
+}
+.header__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.header__heading-title {
+  margin-top: 3em;
+  margin-bottom: 1em;
+  font-size: 5rem;
+}
+.header__heading-adress {
+  font-size: 2rem;
+}
+
+.section-heading {
+  position: relative;
+  margin: 1rem 0;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--maincolor);
+  letter-spacing: 2px;
+  text-decoration-line: underline;
+}
+
+.stationary-offers {
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+}
+
 @media (min-width: 992px) {
   .hamburger {
     display: none;
   }
-  .nav .container {
+  .nav__box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
+  .nav__box-logo img {
+    height: 7.5rem;
+    width: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .nav__box-logo--reduction img {
+    height: 5rem;
+  }
   .nav-desktop {
     position: fixed;
     display: flex;
+    align-items: center;
     padding: 3rem;
     width: 100%;
     height: 12rem;
@@ -130,20 +208,39 @@ body {
   }
   .nav-desktop--reduction {
     height: 6.5rem;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.7);
   }
-  .nav__logo img {
-    height: 7.5rem;
+  .header {
+    height: 85vh;
+  }
+  .header__heading {
+    margin-bottom: 4rem;
+  }
+  .header__heading-title {
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+    font-size: 7.5rem;
+    text-transform: uppercase;
+  }
+  .header__heading-adress {
+    font-size: 3.5rem;
+  }
+  .header__heading-adress span {
+    font-size: 3rem;
+  }
+  .header__img {
+    background-image: url("../img/Zdjęcie lokalu 3 desktop.jpg");
+  }
+  .header__info {
+    display: block;
+    margin: 0 auto;
     width: 100%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    max-width: 990px;
+    font-size: 2rem;
+    text-align: center;
   }
-  .nav__logo--reduction img {
-    height: 5rem;
-  }
-  .square {
-    position: relative;
-    height: 150vh;
-    width: 10%;
+  .header__info-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
   }
 }/*# sourceMappingURL=main.css.map */

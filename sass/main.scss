@@ -49,6 +49,8 @@ body {
 	max-width: 1200px;
 }
 
+//NAWIGACJA
+
 .hamburger {
 	position: fixed;
 	top: 3em;
@@ -69,6 +71,7 @@ body {
 	.disabled {
 		color: gray;
 		text-decoration: none;
+		cursor: default;
 	}
 	&-desktop {
 		display: none;
@@ -107,7 +110,8 @@ body {
 		text-decoration: none;
 		transition: color 0.3s;
 
-		&--d { //zamienić później na desktop, teraz póki co jest tak, żeby hovery działały tylko na działających linkach, stąd inna klasa dodana
+		&--d {
+			//zamienić później na desktop, teraz póki co jest tak, żeby hovery działały tylko na działających linkach, stąd inna klasa dodana
 			position: relative;
 			margin: 0.5em;
 			padding: 0.5em;
@@ -129,6 +133,76 @@ body {
 			color: var(--maincolor);
 		}
 	}
+}
+
+//HEADER
+.header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2rem;
+	height: 85vh;
+	color: #fff;
+	&__img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-image: url('../img/Zdjęcie\ lokalu\ 3\ mobile.jpg');
+		background-size: cover;
+		background-position: center;
+		z-index: -1;
+		&-shadow {
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0, 0, 0, 0.85);
+		}
+	}
+	&__info {
+		display: none;
+	}
+
+	&__heading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		&-title {
+			margin-top: 3em;
+			margin-bottom: 1em;
+			font-size: 5rem;
+		}
+		&-adress {
+			font-size: 2rem;
+		}
+	}
+}
+
+.section-heading {
+	position: relative;
+	margin: 1rem 0;
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	color: var(--maincolor);
+	letter-spacing: 2px; //dodana przerwa pomiędzy literami 2px
+	text-decoration-line: underline;
+}
+
+//STATIONARY OFFERS
+
+.stationary-offers {
+	position: relative;
+	padding: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #fff;
 }
 
 @import './small';

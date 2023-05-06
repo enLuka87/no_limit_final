@@ -3,15 +3,28 @@
 		display: none; //juz nam się nie przyda ikona
 	}
 	.nav {
-		.container {
+		&__box {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
 			align-items: center;
+			&-logo {
+				img {
+					height: 7.5rem;
+					width: 100%;
+					object-fit: contain;
+				}
+				&--reduction {
+					img {
+						height: 5rem;
+					}
+				}
+			}
 		}
 		&-desktop {
 			position: fixed;
 			display: flex;
+			align-items: center;
 			padding: 3rem;
 			width: 100%;
 			height: 12rem;
@@ -21,19 +34,41 @@
 				height: 6.5rem;
 				// box-shadow: 0 0 0.5rem rgba(255, 255, 255, 0.4);
 				//podświetlenie pod navigacją
-				background-color: rgba(0, 0, 0, 0.8);
+				background-color: rgba(0, 0, 0, 0.7);
 			}
 		}
-		&__logo {
-			img {
-				height: 7.5rem;
-				width: 100%;
-				object-fit: contain;
+	}
+	.header {
+		height: 85vh;
+
+		&__heading {
+			margin-bottom: 4rem;
+			&-title {
+				margin-top: 10rem;
+				margin-bottom: 2rem;
+				font-size: 7.5rem;
+				text-transform: uppercase;
 			}
-			&--reduction{
-				img{
-					height: 5rem;
+			&-adress {
+				font-size: 3.5rem;
+				span {
+					font-size: 3rem;
 				}
+			}
+		}
+		&__img {
+			background-image: url('../img/Zdjęcie\ lokalu\ 3\ desktop.jpg');
+		}
+		&__info {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+			max-width: 990px;
+			font-size: 2rem;
+			text-align: center;
+			&-title {
+				font-size: 2.5rem;
+				margin-bottom: 0.5rem;
 			}
 		}
 	}
