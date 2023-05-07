@@ -15,6 +15,7 @@ html {
 	--mainreg: 'playregular', sans-serif;
 	--mainbold: 'playbold', sans-serif;
 	--maincolor: #00adfe;
+	--darkcolor: #242424;
 }
 
 @font-face {
@@ -262,7 +263,7 @@ body {
 .stationary-realisation {
 	position: relative;
 	padding: 2rem;
-	background-color: #242424;
+	background-color: var(--darkcolor);
 	color: #fff;
 	&__photos {
 		img {

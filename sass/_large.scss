@@ -87,6 +87,7 @@
 			flex-wrap: wrap;
 			justify-content: space-evenly;
 			align-items: center;
+			padding-bottom: 5rem;
 		}
 		&__card {
 			margin: 1rem;
@@ -101,7 +102,7 @@
 			display: flex;
 			img {
 				margin: 1rem;
-				width: 100%;
+				max-width: 31rem;
 			}
 		}
 		.section-heading {
