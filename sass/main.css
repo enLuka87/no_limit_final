@@ -244,6 +244,60 @@ body {
   color: #fff;
 }
 
+.stationary-contact {
+  position: relative;
+  padding: 2rem;
+  background-color: #fff;
+  color: #000;
+}
+.stationary-contact__box {
+  display: flex;
+  margin-bottom: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stationary-contact__box-text {
+  padding: 0.8rem 0 2rem 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.stationary-contact__box-link {
+  padding: 1.6rem 0;
+  font-size: 2.2rem;
+}
+.stationary-contact__box-link i {
+  transition: color 0.3s;
+}
+.stationary-contact__box-link a {
+  text-decoration: none;
+  color: #000;
+}
+.stationary-contact__box-link a:hover > i {
+  color: var(--maincolor);
+}
+.stationary-contact__hours {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stationary-contact__hours-title {
+  padding: 0.8rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.stationary-contact__hours-list {
+  list-style-type: none;
+}
+.stationary-contact__hours-list-item {
+  position: relative;
+  padding: 0.5rem;
+}
+.stationary-contact__hours-list-item span {
+  position: absolute;
+  right: 1rem;
+}
+
 @media (min-width: 992px) {
   .hamburger {
     display: none;
@@ -311,17 +365,22 @@ body {
   .section-heading {
     font-size: 4rem;
   }
+  .stationary-offers {
+    padding-bottom: 5rem;
+  }
   .stationary-offers__cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 5rem;
   }
   .stationary-offers__card {
     margin: 1rem;
     width: 28rem;
     height: 50rem;
+  }
+  .stationary-realisation {
+    padding-bottom: 5rem;
   }
   .stationary-realisation__photos {
     display: flex;
@@ -329,9 +388,33 @@ body {
   }
   .stationary-realisation__photos img {
     margin: 1rem;
-    max-width: 30rem;
+    max-width: 28rem;
   }
   .stationary-realisation .section-heading {
     color: #fff;
+  }
+  .stationary-contact__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .stationary-contact__box {
+    width: 32rem;
+  }
+  .stationary-contact__box-text {
+    font-size: 2rem;
+  }
+  .stationary-contact__box-link {
+    font-size: 2.4rem;
+  }
+  .stationary-contact__hours {
+    width: 32rem;
+  }
+  .stationary-contact__hours-title {
+    font-size: 2.4rem;
+  }
+  .stationary-contact__hours-list-item {
+    font-size: 1.8rem;
+    padding: 0.8rem;
   }
 }/*# sourceMappingURL=main.css.map */
