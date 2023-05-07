@@ -325,10 +325,11 @@ body {
   }
   .stationary-realisation__photos {
     display: flex;
+    justify-content: center;
   }
   .stationary-realisation__photos img {
     margin: 1rem;
-    max-width: 31rem;
+    max-width: 30rem;
   }
   .stationary-realisation .section-heading {
     color: #fff;

@@ -100,9 +100,10 @@
 	.stationary-realisation {
 		&__photos {
 			display: flex;
+			justify-content: center;
 			img {
 				margin: 1rem;
-				max-width: 31rem;
+				max-width: 30rem;
 			}
 		}
 		.section-heading {
