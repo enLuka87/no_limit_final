@@ -167,7 +167,7 @@ body {
 
 .section-heading {
   position: relative;
-  margin: 1rem 0 3rem 0;
+  padding: 3rem;
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
@@ -227,6 +227,20 @@ body {
   font-size: 3rem;
   color: #fff;
   background-color: var(--maincolor);
+}
+
+.stationary-realisation {
+  position: relative;
+  padding: 2rem;
+  background-color: #242424;
+  color: #fff;
+}
+.stationary-realisation__photos img {
+  margin: 1rem 0;
+  width: 100%;
+}
+.stationary-realisation .section-heading {
+  color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -294,7 +308,7 @@ body {
     margin-bottom: 0.5rem;
   }
   .section-heading {
-    font-size: 4.4rem;
+    font-size: 4rem;
   }
   .stationary-offers__cards {
     display: flex;
@@ -306,5 +320,15 @@ body {
     margin: 1rem;
     width: 28rem;
     height: 50rem;
+  }
+  .stationary-realisation__photos {
+    display: flex;
+  }
+  .stationary-realisation__photos img {
+    margin: 1rem;
+    width: 100%;
+  }
+  .stationary-realisation .section-heading {
+    color: #fff;
   }
 }/*# sourceMappingURL=main.css.map */
