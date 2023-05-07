@@ -168,13 +168,12 @@ body {
 		flex-direction: column;
 		text-align: center;
 		&-title {
-			margin-top: 2rem;
-			margin-bottom: 1rem;
-			font-size: 4.5rem;
+			padding: 4rem;
+			font-size: 3.6rem;
 			text-transform: uppercase;
 		}
 		&-adress {
-			font-size: 2rem;
+			font-size: 1.8rem;
 			margin-bottom: 1.8rem;
 			span {
 				font-size: 1.8rem;
@@ -182,6 +181,7 @@ body {
 		}
 	}
 	&__info {
+		padding: 4rem 0;
 		font-size: 1.5rem;
 		text-align: center;
 		&-title {
@@ -196,7 +196,6 @@ body {
 	position: relative;
 	margin: 1rem 0 3rem 0;
 	font-size: 3rem;
-	font-weight: 400;
 	text-transform: uppercase;
 	text-align: center;
 	color: var(--maincolor);
@@ -212,29 +211,32 @@ body {
 	&__card {
 		//pomyśleć nad maksymalną szerokością
 		position: relative;
-		padding: 2rem 2rem 8rem 2rem;
+		padding: 2rem 2rem 6.5rem 2rem;
 		margin: 2rem 0;
 		border: 2px solid var(--maincolor);
 		background-color: #fff;
 		border-radius: 1rem;
 		box-shadow: 2px 2px 5px rgb(0, 0, 0);
+		transition: transform 0.3s;
+		&:hover {
+			transform: scale(1.04);
+		}
 		&-title {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			text-align: center;
-			height: 10rem;
-			padding: 2rem 0;
-			font-size: 3rem;
+			height: 6rem;
+			padding-bottom: 1.6rem;
+			font-size: 2.2rem;
 			border-bottom: 2px solid var(--maincolor);
 		}
 		&-info {
-			margin: 1rem 0;
-			font-size: 1.8rem;
+			padding: 0.8rem 0;
+			font-size: 1.6rem;
 		}
 		&-list {
-			font-size: 1.8rem;
-			margin: 1rem 0;
+			font-size: 1.6rem;
 			list-style-position: inside;
 			&-item {
 				padding: 0.5rem 0;
@@ -244,10 +246,10 @@ body {
 			position: absolute;
 			left: 50%;
 			transform: translateX(-50%);
-			bottom: 2rem;
-			padding: 1rem;
+			bottom: 1.6rem;
+			padding: 0.5rem;
 			border-radius: 1rem;
-			width: 60%;
+			width: 50%;
 			border: none;
 			font-size: 3rem;
 			color: #fff;
