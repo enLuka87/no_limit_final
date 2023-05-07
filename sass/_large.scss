@@ -141,4 +141,31 @@
 			}
 		}
 	}
+	//FOOTER
+	.footer {
+		&__social {
+			position: absolute;
+			font-size: 2.6rem;
+			a {
+				.fa-brands {
+					padding: 0 2rem;
+				}
+				.fa-facebook-f:hover {
+					color: #1c78e0;
+				}
+
+				.fa-instagram:hover {
+					color: #fd486a;
+				}
+
+				.fa-youtube:hover {
+					color: #fd0013;
+				}
+			}
+		}
+		&__text {
+			padding: 2rem;
+			text-align: center;
+		}
+	}
 }

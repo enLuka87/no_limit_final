@@ -298,6 +298,34 @@ body {
   right: 1rem;
 }
 
+.footer {
+  position: relative;
+  background-color: #000;
+}
+.footer__social {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2.4rem;
+}
+.footer__social a .fa-brands {
+  color: rgb(167, 165, 165);
+  transition: color 0.3s;
+}
+.footer__social a .fa-facebook-f:hover {
+  color: #1c78e0;
+}
+.footer__social a .fa-instagram:hover {
+  color: #fd486a;
+}
+.footer__social a .fa-youtube:hover {
+  color: #fd0013;
+}
+.footer__text {
+  padding: 2rem;
+  text-align: center;
+}
+
 @media (min-width: 992px) {
   .hamburger {
     display: none;
@@ -416,5 +444,25 @@ body {
   .stationary-contact__hours-list-item {
     font-size: 1.8rem;
     padding: 0.8rem;
+  }
+  .footer__social {
+    position: absolute;
+    font-size: 2.6rem;
+  }
+  .footer__social a .fa-brands {
+    padding: 0 2rem;
+  }
+  .footer__social a .fa-facebook-f:hover {
+    color: #1c78e0;
+  }
+  .footer__social a .fa-instagram:hover {
+    color: #fd486a;
+  }
+  .footer__social a .fa-youtube:hover {
+    color: #fd0013;
+  }
+  .footer__text {
+    padding: 2rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=main.css.map */
