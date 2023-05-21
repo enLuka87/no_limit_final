@@ -165,6 +165,14 @@ body {
   font-size: 1.8rem;
   margin-bottom: 0.5rem;
 }
+.header .announcments {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fe5100;
+}
 
 .section-heading {
   position: relative;
@@ -389,6 +397,9 @@ body {
   .header__info-title {
     font-size: 2.4rem;
     margin-bottom: 0.5rem;
+  }
+  .header .announcments {
+    font-size: 3.5rem;
   }
   .section-heading {
     font-size: 4rem;

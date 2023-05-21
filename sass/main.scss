@@ -190,6 +190,14 @@ body {
 			margin-bottom: 0.5rem;
 		}
 	}
+	.announcments {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 1.5rem;
+		text-align: center;
+		color: #fe5100;
+	}
 }
 
 //SECTION HEADING
