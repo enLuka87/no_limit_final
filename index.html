@@ -167,7 +167,9 @@
                 <h2 class="section-heading">Rezerwacja terminu</h2>
                 <div class="stationary-contact__info">
                     <div class="stationary-contact__box">
-                        <p class="stationary-contact__box-text">Jeżeli chcesz mieć gwarancję dostępności terminu zarezerwuj go mailowo (podając datę i godzinę), telefonicznie lub poprzez formularz kontaktowy. W razie jakichkolwiek pytań napisz do nas lub zadzwoń.</p>
+                        <p class="stationary-contact__box-text">Jeżeli chcesz mieć gwarancję dostępności terminu
+                            zarezerwuj go mailowo (podając datę i godzinę), telefonicznie lub poprzez formularz
+                            kontaktowy. W razie jakichkolwiek pytań napisz do nas lub zadzwoń.</p>
                         <div class="stationary-contact__box-link"><a href="tel:+48796400707" onclick="void(0)"><i
                                     class="fa-solid fa-phone vibrate-3"></i> +48
                                 796 400 707</a>
@@ -190,21 +192,23 @@
                         </ul>
                     </div>
 
-                    <form class="stationary-contact__form">
+                    <form action="contact.php" method="post" class="stationary-contact__form">
                         <p class="stationary-contact__form-title">Formularz kontaktowy</p>
                         <div class="stationary-contact__form-box">
-                            <label for="name">Imię:</label>
-                            <input type="text" id="name">
+                            <label for="firstName">Imię:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <!--po atrybucie name bedziemy wyszukiwali w php nasze elementy-->
                         </div>
                         <div class="stationary-contact__form-box">
-                            <label for="mail">Twój email:</label>
-                            <input type="mail" id="mail">
+                            <label for="email">Twój email:</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="stationary-contact__form-box">
                             <label for="msg">Wiadomość:</label>
-                            <textarea id="msg" cols="30" rows="6"></textarea>
+                            <textarea id="msg" name="msg" required></textarea>
                         </div>
                         <button type="submit" class="stationary-contact__form-btn">Wyślij</button>
+                        <p class="stationary-contact__form-msgStatus"></p>
                     </form>
 
                 </div>

@@ -343,12 +343,14 @@ body {
 	}
 
 	&__form {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		padding: 1em;
 		border-radius: 8px;
-		background-color:#dddddd; //dobrać kolor
-		&-title{
+		background-color: #dddddd; //dobrać kolor
+		overflow: hidden;
+		&-title {
 			padding-bottom: 0.7em;
 			text-align: center;
 			text-transform: uppercase;
@@ -362,23 +364,24 @@ body {
 				margin-bottom: 0.3em;
 				font-size: 1.6rem;
 			}
-			input, textarea {
+			input,
+			textarea {
 				margin-bottom: 1em;
 				padding: 0.6em 1.2em;
 				border: 2px solid #dddddd;
 				border-radius: 8px;
-				&:focus{
+				&:focus {
 					outline: none;
-					border:2px solid var(--maincolor)
+					border: 2px solid var(--maincolor);
 				}
 			}
-			textarea{
+			textarea {
 				min-height: 100px;
 				min-width: 100%;
 				max-width: 100%;
 			}
 		}
-		&-btn{
+		&-btn {
 			align-self: flex-end;
 			padding: 0.5em;
 			width: 40%;
@@ -389,10 +392,27 @@ body {
 			font-weight: bold;
 			cursor: pointer;
 			transition: color 0.3s;
-			&:hover{
+			&:hover {
 				background-color: #fff;
-				color: var(--maincolor)
+				color: var(--maincolor);
 			}
+		}
+		&-msgStatus {
+			display: none;
+		}
+		.success,
+		.error {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #dddddd;
+			font-size: 2.4rem;
+			font-weight: bold;
 		}
 	}
 }

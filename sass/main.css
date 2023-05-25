@@ -307,11 +307,13 @@ body {
   right: 1rem;
 }
 .stationary-contact__form {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 1em;
   border-radius: 8px;
   background-color: #dddddd;
+  overflow: hidden;
 }
 .stationary-contact__form-title {
   padding-bottom: 0.7em;
@@ -328,13 +330,15 @@ body {
   margin-bottom: 0.3em;
   font-size: 1.6rem;
 }
-.stationary-contact__form-box input, .stationary-contact__form-box textarea {
+.stationary-contact__form-box input,
+.stationary-contact__form-box textarea {
   margin-bottom: 1em;
   padding: 0.6em 1.2em;
   border: 2px solid #dddddd;
   border-radius: 8px;
 }
-.stationary-contact__form-box input:focus, .stationary-contact__form-box textarea:focus {
+.stationary-contact__form-box input:focus,
+.stationary-contact__form-box textarea:focus {
   outline: none;
   border: 2px solid var(--maincolor);
 }
@@ -358,6 +362,23 @@ body {
 .stationary-contact__form-btn:hover {
   background-color: #fff;
   color: var(--maincolor);
+}
+.stationary-contact__form-msgStatus {
+  display: none;
+}
+.stationary-contact__form .success,
+.stationary-contact__form .error {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #dddddd;
+  font-size: 2.4rem;
+  font-weight: bold;
 }
 
 .footer {
