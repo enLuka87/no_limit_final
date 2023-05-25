@@ -197,7 +197,7 @@ body {
   margin: 2rem 0;
   border: 2px solid var(--maincolor);
   background-color: #fff;
-  border-radius: 1rem;
+  border-radius: 8px;
   box-shadow: 2px 2px 5px rgb(0, 0, 0);
   transition: transform 0.3s;
 }
@@ -231,7 +231,7 @@ body {
   transform: translateX(-50%);
   bottom: 1.6rem;
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 8px;
   width: 50%;
   border: none;
   font-size: 3rem;
@@ -263,7 +263,6 @@ body {
   display: flex;
   margin-bottom: 3rem;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .stationary-contact__box-text {
@@ -289,6 +288,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 2rem;
 }
 .stationary-contact__hours-title {
   padding: 0.8rem;
@@ -305,6 +305,54 @@ body {
 .stationary-contact__hours-list-item span {
   position: absolute;
   right: 1rem;
+}
+.stationary-contact__form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  border-radius: 8px;
+  background-color: #cbcfcb;
+}
+.stationary-contact__form-title {
+  padding-bottom: 0.7em;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.stationary-contact__form-box {
+  display: flex;
+  flex-direction: column;
+}
+.stationary-contact__form-box label {
+  margin-bottom: 0.3em;
+  font-size: 1.6rem;
+}
+.stationary-contact__form-box input, .stationary-contact__form-box textarea {
+  margin-bottom: 1em;
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 8px;
+}
+.stationary-contact__form-box input:focus, .stationary-contact__form-box textarea:focus {
+  outline: none;
+  border: 2px solid var(--maincolor);
+}
+.stationary-contact__form-box textarea {
+  min-height: 100px;
+  min-width: 100%;
+  max-width: 100%;
+}
+.stationary-contact__form-btn {
+  align-self: flex-end;
+  padding: 0.5em;
+  width: 40%;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--maincolor);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .footer {
@@ -456,6 +504,9 @@ body {
   .stationary-contact__hours-list-item {
     font-size: 1.8rem;
     padding: 0.8rem;
+  }
+  .stationary-contact__form {
+    width: 32rem;
   }
   .footer__social {
     position: absolute;
