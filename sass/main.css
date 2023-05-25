@@ -311,7 +311,7 @@ body {
   flex-direction: column;
   padding: 1em;
   border-radius: 8px;
-  background-color: #cbcfcb;
+  background-color: #dddddd;
 }
 .stationary-contact__form-title {
   padding-bottom: 0.7em;
@@ -331,7 +331,7 @@ body {
 .stationary-contact__form-box input, .stationary-contact__form-box textarea {
   margin-bottom: 1em;
   padding: 0.6em 1.2em;
-  border: none;
+  border: 2px solid #dddddd;
   border-radius: 8px;
 }
 .stationary-contact__form-box input:focus, .stationary-contact__form-box textarea:focus {
@@ -347,12 +347,17 @@ body {
   align-self: flex-end;
   padding: 0.5em;
   width: 40%;
-  border: none;
+  border: 2px solid var(--maincolor);
   border-radius: 8px;
   background-color: var(--maincolor);
   color: white;
   font-weight: bold;
   cursor: pointer;
+  transition: color 0.3s;
+}
+.stationary-contact__form-btn:hover {
+  background-color: #fff;
+  color: var(--maincolor);
 }
 
 .footer {
