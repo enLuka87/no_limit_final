@@ -9,7 +9,7 @@ $message = $_POST["msg"];
 $txt = "Imię: " . $name . "\r\n" . "e-mail: " . $from . "\r\n" . "Treść: " . $message;
 
 $headers = "From: " . $from . "\r\n";
-$headers .= "Reply-to" . $from . "\r\n";
+$headers .= "Reply-to: " . $from . "\r\n";
 
 $mail_status = mail($to, $subject, $txt, $headers);
 

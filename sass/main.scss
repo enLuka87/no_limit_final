@@ -417,6 +417,29 @@ body {
 	}
 }
 
+//STATIONARY LOCATION
+.stationary-location {
+	position: relative;
+	padding: 2rem;
+	background-color: var(--darkcolor);
+
+	.section-heading {
+		color: #fff;
+	}
+
+	&__photo {
+		display: none;
+	}
+
+	&__map {
+		margin-top: 1rem;
+		overflow: hidden;
+		iframe {
+			width: 100%;
+		}
+	}
+}
+
 //FOOTER
 .footer {
 	position: relative;

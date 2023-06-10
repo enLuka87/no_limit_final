@@ -44,20 +44,20 @@ const msgStatus = document.querySelector('.stationary-contact__form-msgStatus');
 
 console.log(document.location.search);
 
-if(document.location.search === '?mail_status=sent'){
-	msgStatus.classList.add('success')
-	msgStatus.textContent = 'Wysłano wiadomość!'
-	
+if (document.location.search === '?mail_status=sent') {
+	msgStatus.classList.add('success');
+	msgStatus.textContent = 'Wysłano wiadomość!';
+
 	setTimeout(() => {
-		msgStatus.classList.remove('success')
-	}, 5000);
+		msgStatus.classList.remove('success');
+	}, 15000);
 }
 
-if(document.location.search === '?mail_status=error'){
-	msgStatus.classList.add('error')
-	msgStatus.textContent = 'Błąd podczas wysyłania!'
-	
+if (document.location.search === '?mail_status=error') {
+	msgStatus.classList.add('error');
+	msgStatus.textContent = 'Błąd podczas wysyłania!';
+
 	setTimeout(() => {
-		msgStatus.classList.remove('error')		
-	}, 5000);
+		msgStatus.classList.remove('error');
+	}, 15000);
 }

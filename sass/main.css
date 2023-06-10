@@ -381,6 +381,25 @@ body {
   font-weight: bold;
 }
 
+.stationary-location {
+  position: relative;
+  padding: 2rem;
+  background-color: var(--darkcolor);
+}
+.stationary-location .section-heading {
+  color: #fff;
+}
+.stationary-location__photo {
+  display: none;
+}
+.stationary-location__map {
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.stationary-location__map iframe {
+  width: 100%;
+}
+
 .footer {
   position: relative;
   background-color: #000;
@@ -533,6 +552,23 @@ body {
   }
   .stationary-contact__form {
     width: 32rem;
+  }
+  .stationary-location {
+    padding-bottom: 5rem;
+  }
+  .stationary-location__box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .stationary-location__photo {
+    display: block;
+    margin-top: 10px;
+    height: 450px;
+    border: 2px solid #fff;
+  }
+  .stationary-location__map {
+    height: 450px;
+    width: 65%;
   }
   .footer__social {
     position: absolute;
