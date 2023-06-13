@@ -43,13 +43,11 @@
 
 	//NAGŁÓWEK
 	.header {
-		height: 85vh;
 
 		&__heading {
-			margin-bottom: 4rem;
+			margin-bottom: 3.5rem;
 			&-title {
 				margin-top: 10rem;
-				margin-bottom: 2rem;
 				font-size: 6rem;
 			}
 			&-adress {
@@ -63,14 +61,10 @@
 			background-image: url('../img/Zdjęcie\ lokalu\ 3\ desktop.jpg');
 		}
 		&__info {
-			margin: 0 auto;
-			width: 100%;
-			max-width: 990px;
+			max-width: 810px;
 			font-size: 2rem;
-			text-align: center;
 			&-title {
 				font-size: 2.4rem;
-				margin-bottom: 0.5rem;
 			}
 		}
 		.announcments {
@@ -83,37 +77,6 @@
 		font-size: 4rem;
 	}
 
-	//STATIONARY OFFERS
-	.stationary-offers {
-		padding-bottom: 5rem;
-		&__cards {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-evenly;
-			align-items: center;
-		}
-		&__card {
-			margin: 1rem;
-			width: 28rem;
-			height: 50rem;
-		}
-	}
-
-	//STATIONARY REALISATION
-	.stationary-realisation {
-		padding-bottom: 5rem;
-		&__photos {
-			display: flex;
-			justify-content: center;
-			img {
-				margin: 1rem;
-				max-width: 28rem; //ponieważ problemy na niektórych urządzeniach, tak jakby nie działa container
-			}
-		}
-		.section-heading {
-			color: #fff;
-		}
-	}
 	//STATIONARY CONTACT
 	.stationary-contact {
 		&__info {
@@ -123,75 +86,16 @@
 		}
 		&__box {
 			width: 32rem;
-			&-text {
-				font-size: 2rem;
-			}
-			&-link {
-				font-size: 2.4rem;
-			}
 		}
 		
 		&__hours {
 			width: 32rem;
-			&-title {
-				font-size: 2.4rem;
-			}
-			&-list {
-				&-item {
-					font-size: 1.8rem;
-					padding: 0.8rem;
-				}
-			}
 		}
 		
 		&__form {
+			left: 0;
+			transform: translateX(0); //wrócenie do stanu sprzed nadania wyśrodkowania w small'u
 			width: 32rem;
-		}
-	}
-	//STATIONARY LOCATION
-	.stationary-location {
-		padding-bottom: 5rem;
-		&__box {
-			display: flex;
-			// align-items: center;
-			justify-content: space-between;
-		}
-		&__photo {
-			display: block;
-			margin-top: 10px; //żeby było wyrównane z mapą
-			height: 450px;
-			border: 2px solid #fff;
-		}
-		&__map {
-			height: 450px;
-			width: 65%;
-		}
-	}
-	//FOOTER
-	.footer {
-		&__social {
-			position: absolute;
-			font-size: 2.6rem;
-			a {
-				.fa-brands {
-					padding: 0 2rem;
-				}
-				.fa-facebook-f:hover {
-					color: #1c78e0;
-				}
-
-				.fa-instagram:hover {
-					color: #fd486a;
-				}
-
-				.fa-youtube:hover {
-					color: #fd0013;
-				}
-			}
-		}
-		&__text {
-			padding: 2rem;
-			text-align: center;
 		}
 	}
 }
