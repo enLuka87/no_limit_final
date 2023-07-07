@@ -42,13 +42,13 @@
 		&__cards {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content: space-evenly;
+			justify-content: center; //zmienione na center do 5 kart, przy sześciu wrócić do space around lub evenly
 			align-items: center;
 		}
 		&__card {
-			margin: 1rem;
-			width: 28rem;
-			height: 50rem;
+			margin: 1rem 3rem; //dodane 3remy po bokach, zmienione do 5 kart, jak bedzie 6 zostawić 1rem na około
+			width: 30rem;
+			height: 45rem;
 		}
 	}
 

@@ -232,7 +232,7 @@ body {
   bottom: 1.6rem;
   padding: 0.5rem;
   border-radius: 8px;
-  width: 50%;
+  width: 60%;
   border: none;
   font-size: 3rem;
   color: #fff;
@@ -465,13 +465,13 @@ body {
   .stationary-offers__cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
   }
   .stationary-offers__card {
-    margin: 1rem;
-    width: 28rem;
-    height: 50rem;
+    margin: 1rem 3rem;
+    width: 30rem;
+    height: 45rem;
   }
   .stationary-realisation {
     padding-bottom: 5rem;
