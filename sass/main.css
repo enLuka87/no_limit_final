@@ -185,6 +185,27 @@ body {
   letter-spacing: 2px;
 }
 
+.portfolio {
+  display: flex;
+  padding: 150px 8% 50px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+.gallery__img {
+  height: 200px;
+  width: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .stationary-offers {
   position: relative;
   padding: 2rem;
