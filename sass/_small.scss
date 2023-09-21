@@ -35,6 +35,23 @@
 			font-size: 2.5rem;
 		}
 	}
+.portfolio{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		grid-gap: 30px;
+
+		&__img {
+			margin: 0;
+			height: 200px;
+			width: 200px;
+			object-fit: cover;
+			// border-radius: 8px;
+		}
+	}
 
 	//STATIONARY OFFERS
 	.stationary-offers {

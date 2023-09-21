@@ -43,7 +43,6 @@
 
 	//NAGŁÓWEK
 	.header {
-
 		&__heading {
 			margin-bottom: 3.5rem;
 			&-title {
@@ -77,6 +76,11 @@
 		font-size: 4rem;
 	}
 
+	//PORTFOLIO
+	.portfolio {
+		padding-top: 100px;
+	}
+
 	//STATIONARY CONTACT
 	.stationary-contact {
 		&__info {
@@ -87,14 +91,16 @@
 		&__box {
 			width: 32rem;
 		}
-		
+
 		&__hours {
 			width: 32rem;
 		}
-		
+
 		&__form {
 			left: 0;
-			transform: translateX(0); //wrócenie do stanu sprzed nadania wyśrodkowania w small'u
+			transform: translateX(
+				0
+			); //wrócenie do stanu sprzed nadania wyśrodkowania w small'u
 			width: 32rem;
 		}
 	}
