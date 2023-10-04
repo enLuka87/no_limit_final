@@ -203,3 +203,14 @@ body.lb-disable-scrolling {
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 	opacity: 1;
 }
+
+/*większy gif ładowania*/
+@media (min-width: 576px) {
+	.lb-cancel {
+		display: block;
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		background: url(/img/lightbox/loading2.gif) no-repeat;
+	}
+}
